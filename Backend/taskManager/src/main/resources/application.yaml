@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: taskManager
+
+
+  datasource:
+    url: {DATABASE_URL}
+    username: {USERNAME}
+    password: {password}
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+  security:
+    user:
+      name: {NAME}
+      password: {PASSWORD}
+
+server:
+  port: {PORT}
